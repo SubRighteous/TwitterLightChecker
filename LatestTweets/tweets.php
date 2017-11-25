@@ -197,6 +197,18 @@
 		
 	}
 	
+    //Get latest tweet in text
+    function latestText(){
+        return $get_tweets;
+    }
+
+    $TweetText = latestText();
+
 	// Display latest tweets. (Modify username to your Twitter handle)
 	display_latest_tweets('RysFamilyLights');
+
+    if($TweetText = "Turn A1 On"){
+        echo "Turning on the lights";
+    }
+
 ?>
