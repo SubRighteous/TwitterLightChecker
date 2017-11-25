@@ -1,3 +1,5 @@
+<html>
+    <body>
 <?php
 ini_set('display_errors', 1);
 require_once('TwitterAPIExchange.php');
@@ -18,8 +20,8 @@ $requestMethod = 'POST';
 $postfields = array(
     'screen_name' => 'usernameToBlock', 
     'skip_status' => '1'
-);
-
+);        
+        
 /** Perform a POST request and echo the response **/
 $twitter = new TwitterAPIExchange($settings);
 echo $twitter->buildOauth($url, $requestMethod)
@@ -37,3 +39,5 @@ echo $twitter->setGetfield($getfield)
              ->performRequest();
 
 ?>
+        </body>
+</html>
