@@ -199,7 +199,7 @@
 	
     //Get latest tweet in text
     function latestText(){
-        return $get_tweets;
+        return "" + $get_tweets;
     }
 
     $TweetText = latestText();
