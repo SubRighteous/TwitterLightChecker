@@ -207,11 +207,11 @@
 	// Display latest tweets. (Modify username to your Twitter handle)
 	display_latest_tweets('RysFamilyLights');
 
-    if($TweetText == "Turn A1 On"){
+    if($get_tweets == "Turn A1 On"){
         echo "Turning on the lights";
         echo exec("heyu turn a1 on");
     }
-    if($TweetText == "Turn A1 Off"){
+    if($get_tweets == "Turn A1 Off"){
         echo "Turning off the lights";
         echo exec("heyu turn a1 off");
     }
