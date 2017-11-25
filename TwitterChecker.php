@@ -57,6 +57,9 @@ echo $TweetText;
  //      sleep(10);
  //   }
 
+while (1==)
+    echo "Hellow";
+    sleep(1);
 
 ?>
 
