@@ -27,9 +27,9 @@ if($string["errors"][0]["message"] != "")
     echo "<h3>Oh, There was a problem. </h3><p>It Seems that Twitter has returned an error:</p><p><em>".$string[errors][0]["message"]."</em></p>";exit();
 }
 
-$TweetText = $string as $items | "".$items['text'];
 
-echo $TweetText;
+
+echo "<h>Tweet: </h>". $items['text']."<br />";
 
 //foreach($string as $items)
 //    {
