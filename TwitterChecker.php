@@ -42,20 +42,20 @@ echo $TweetText;
 //        echo "Listed: ". $items['user']['listed_count']."<br /><hr />";
 //    }
 
-    while(1==1){
-        if($TweetText != "Turn A1 On" && $TweetText != "Turn A1 Off"){
-            echo "<h>The Users has posted something other than turn on the lights</h>"
-        }
-        if($TweetText == "Turn A1 On"){
-            echo "<h>Turning A1 On</h>";
-            echo exec("heyu turn a1 On");
-        }
-        if($TweetText == "Turn A1 Off"){
-            echo "Turning A1 off";
-            echo exec("heyu turn A1 off");    
-        }
-        sleep(10);
-    }
+ //  while(1==1){
+ //     if($TweetText != "Turn A1 On" && $TweetText != "Turn A1 Off"){
+ //         echo "<h>The Users has posted something other than turn on the lights</h>"
+ //     }
+ //     if($TweetText == "Turn A1 On"){
+ //         echo "<h>Turning A1 On</h>";
+ //         echo exec("heyu turn a1 On");
+ //     }
+ //     if($TweetText == "Turn A1 Off"){
+ //           echo "Turning A1 off";
+ //           echo exec("heyu turn A1 off");    
+ //     }
+ //      sleep(10);
+ //   }
 
 
 ?>
