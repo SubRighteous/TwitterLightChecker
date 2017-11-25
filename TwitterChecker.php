@@ -15,7 +15,7 @@ $url = "https://api.twitter.com/1.1/statuses/user_timeline.json";
         
 $requestMethod = "GET";
          
-$getfield = '?screen_name=iagdotme&count=20';   
+$getfield = '?screen_name=RysFamilyLights&count=20';   
         
 $twitter = new TwitterAPIExchange($settings);
 $string = json_decode($twitter->setGetfield($getfield)
@@ -26,6 +26,11 @@ if($string["errors"][0]["message"] != "")
 {
     echo "<h3>Oh, There was a problem. </h3><p>It Seems that Twitter has returned an error:</p><p><em>".$string[errors][0]["message"]."</em></p>";exit();
 }
+
+$TweetText = $items['text'];
+
+echo $TweetText;
+
 foreach($string as $items)
     {
         echo "Time and Date of Tweet: ".$items['created_at']."<br />";
