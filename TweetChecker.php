@@ -4,7 +4,7 @@
 	date_default_timezone_set('America/New_York');
 	
 	// Require TwitterOAuth files. (Downloadable from : https://github.com/abraham/twitteroauth)
-	require_once("twitteroauth-master/src/twitteroauth.php");
+	require_once("./twitteroauth-master/src/twitteroauth.php");
 	
     // Function to authenticate app with Twitter.
 	function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
