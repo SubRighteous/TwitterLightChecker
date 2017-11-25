@@ -18,9 +18,18 @@ $requestMethod = "GET";
 $getfield = '?screen_name=iagdotme&count=20';   
         
 $twitter = new TwitterAPIExchange($settings);
-echo $twitter->setGetfield($getfield)
+$string = json_decode($twitter->setGetfield($getfield)
             ->buildOauth($url, $requestMethod)
-            ->performRequest();
+            ->performRequest(),$assoc = TRUE);
+   
+if($string["errors"][0]["message"] != "")
+{
+    echo "<h3>Oh, There was a problem. </h3><p>It Seems that Twitter has returned an error : </p><p><em>".$string[errors][0]["message"]."</em></p>";exit();
+}
+
+echo "<pre>";
+print_r($string);
+echo "</pre>";
 
 ?>
 
