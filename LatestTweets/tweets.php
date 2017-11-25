@@ -209,6 +209,11 @@
 
     if($TweetText == "Turn A1 On"){
         echo "Turning on the lights";
+        echo exec("heyu turn a1 on");
+    }
+    if($TweetText == "Turn A1 Off"){
+        echo "Turning off the lights";
+        echo exec("heyu turn a1 off");
     }
 
 ?>
