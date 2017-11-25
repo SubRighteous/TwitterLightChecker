@@ -27,7 +27,7 @@ if($string["errors"][0]["message"] != "")
     echo "<h3>Oh, There was a problem. </h3><p>It Seems that Twitter has returned an error:</p><p><em>".$string[errors][0]["message"]."</em></p>";exit();
 }
 
-$TweetText = "".$items['text'];
+$TweetText = $string as $items | "".$items['text'];
 
 echo $TweetText;
 
@@ -42,20 +42,6 @@ echo $TweetText;
 //        echo "Listed: ". $items['user']['listed_count']."<br /><hr />";
 //    }
 
-   while( true){
-      if($TweetText != "Turn A1 On" && $TweetText != "Turn A1 Off"){
-          echo "<h>The Users has posted something other than turn on the lights</h>"
-      }
-      if($TweetText == "Turn A1 On"){
-          echo "<h>Turning A1 On</h>";
-          echo exec("heyu turn a1 On");
-      }
-      if($TweetText == "Turn A1 Off"){
-            echo "Turning A1 off";
-            echo exec("heyu turn A1 off");    
-      }
-       sleep(10);
-    }
 
 
 ?>
